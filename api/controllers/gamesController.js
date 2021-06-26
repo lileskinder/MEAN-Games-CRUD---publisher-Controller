@@ -3,8 +3,8 @@ const _myGame = mongoose.model("Game");
 
 module.exports.getAllGames = function (request, response) {
     let offset = 0;
-    let count = 50;
-    const maxCount = 50;
+    let count = 5;
+    const maxCount = 10;
 
     if (request.query && request.query.offset) {
         offset = parseInt(request.query.offset)
